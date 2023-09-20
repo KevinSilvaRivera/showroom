@@ -77,7 +77,6 @@ es_abuelo(Abuelo, Nieto) :-
 %regla de para determinar si es tio
 es_tio(Tio, Sobrino) :- padre(Padre, Tio), padre(Padre, Hijo), (padre(Hijo, Sobrino) ; madre(Hijo, Sobrino)), Hijo \= Tio.  
 
-%regla para determinarsi es primo
 es_primo(Primo, X) :- 
     (padre(Padre, Primo) ; madre(Padre, Primo)), 
     padre(Padre2, Padre), padre(Padre2, Hijo), 
