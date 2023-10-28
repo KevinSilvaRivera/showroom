@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Bienvenido a Nuestro Showroom Virtual</h1>
+
+    <div id="showroom"></div>
+
+    <!-- Botón para mostrar el formulario -->
+    <button id="show-form-button">Agregar Producto</button>
+
+    <form id="product-form">
+        <!-- Campos para ingresar los detalles del producto -->
+        <label for="product-image">Imagen del Producto:</label>
+        <input type="text" id="product-image" name="product-image" placeholder="URL de la imagen"><br>
+
+        <label for="product-name">Nombre del Producto:</label>
+        <input type="text" id="product-name" name="product-name" placeholder="Nombre del producto"><br>
+
+        <label for="product-description">Descripción:</label>
+        <textarea id="product-description" name="product-description"
+            placeholder="Descripción del producto"></textarea><br>
+
+        <label for="product-price">Precio:</label>
+        <input type="text" id="product-price" name="product-price" placeholder="Precio del producto"><br>
+
+        <button type="button" id="add-product">Agregar Producto</button>
+    </form>
+    <script src="scrip.js"></script>
+</body>
+
+</html>
